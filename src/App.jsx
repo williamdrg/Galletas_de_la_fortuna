@@ -9,7 +9,7 @@ import { useState } from 'react'
 
 function App() {
 
-  const backgroundImage = [ "url(/fondo1.jpg)", "url(/fondo2.jpg)", "url(/fondo3.jpg)", "url(/fondo4.jpg)" ]
+  const backgroundImage = [ "url(/fondo1.jpg)", "url(/fondo2.jpg)", "url(/fondo3.jpg)", "url(/fondo4.jpg)", "url(/fondo5.JPG)", "url(/fondo6.JPG)" ]
 
   const [index, setIndex] = useState(0)
   const [indexa, setIndexa] = useState(0)
@@ -20,8 +20,7 @@ function App() {
   }
 
   return (
-    <div className="App" style={{backgroundImage: backgroundImage[indexa] }}>
-      <img src="" alt="" />
+    <div className="App" style={{backgroundImage: backgroundImage[indexa]}}>
       <div className='container__cookie'>
         <div>
           <h1>GALLETAS DE LA <br/> FORTUNA</h1>

@@ -46,7 +46,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* gap: 1rem; */
 }
 
 .paper:hover {
@@ -55,19 +54,21 @@
 }
 
 .container__paper {
-
     overflow: hidden;
     border-radius: 12px;
     max-width: 554px;
     margin: 0px 10px;
+    display: flex;
+    justify-content: center;
 }
+
 .paper p {
     text-align: center;
     padding: 0px 150px;
     font-family:cursive;
 }
 
-.paper p:nth-child(2) {
+.container__paper p:nth-child(2) {
     position: absolute;
     bottom: 0;
     background-color: rgba(49, 48, 48, 0.257);
@@ -81,6 +82,7 @@
              0px 0px 7px rgba(157, 83, 255, 0.4);
     border-radius: 10px;
     font-weight: 600;
+    
     
 }
 
@@ -138,3 +140,9 @@
         background-size: 130% 90%;
     }
 }
+
+/* @media screen and (min-width: 1440px) {
+    .App {
+        background-size: 100%;
+    }
+} */
