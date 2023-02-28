@@ -48,10 +48,16 @@
     align-items: center;
 }
 
-.paper:hover {
-   transform: scale(2);
-   transition: transform 1s;
+
+@-webkit-keyframes animar {
+    0%{-webkit-transform: scale(1);}
+    50%{-webkit-transform: scale(2);}
+    100%{-webkit-transform: scale(1);}
 }
+
+.animationScale {
+    -webkit-animation: animar 3s 1;
+ }
 
 .container__paper {
     overflow: hidden;
@@ -139,8 +145,10 @@
         background-size: 130% 90%;
     }
 
-    .paper:hover {
-        transform: scale(1.5);
-     }
+    @-webkit-keyframes animar {
+        0%{-webkit-transform: scale(1);}
+        50%{-webkit-transform: scale(1.5);}
+        100%{-webkit-transform: scale(1);}
+    }
 }
 
