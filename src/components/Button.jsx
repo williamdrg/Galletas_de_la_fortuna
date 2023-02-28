@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Button = ({ change }) => {
-    
+
+const Button = ({ change, pp }) => {
+        
     return (
         <div>
-            <button className='btn__change' onClick={ change }>Ver otro</button>
+            <button className={pp} onClick={ change }>Ver otro</button>
         </div>
     );
 };

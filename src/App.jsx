@@ -25,11 +25,12 @@ function App() {
   const [isVisible, setIsVisible] = useState ( true )
   // const prueba = () => {setIsVisible(!isVisible)}
 
+
   useEffect(() => {
     if (!isVisible) {
       setTimeout(() => {
         setIsVisible(true)
-      }, 3000);
+      }, 4000);
     }
   }, [isVisible])
 
@@ -46,7 +47,7 @@ function App() {
       animation = { isVisible ? 'paper' : ' paper animationScale' }/>
       <Button
       change = { changeIndex }
-      // pp = { prueba }
+      pp = { isVisible ? 'btn__change' : 'btn__change btn__off'}
        />
       </div>
     </div>
