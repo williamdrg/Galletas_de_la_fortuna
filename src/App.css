@@ -132,17 +132,15 @@
     .paper p {
         padding: 0px 80px;
         font-size: 0.8rem;
-        
-        
     }
+
     .paper {
         height: 250px;
         background-size: 130% 90%;
     }
+
+    .paper:hover {
+        transform: scale(1.5);
+     }
 }
 
-/* @media screen and (min-width: 1440px) {
-    .App {
-        background-size: 100%;
-    }
-} */
