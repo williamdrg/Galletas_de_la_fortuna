@@ -5,7 +5,6 @@
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:100%;
     
 }
 
@@ -152,3 +151,8 @@
     }
 }
 
+@media screen and (min-width: 1025px) {
+    .App {
+        background-size:100%;
+    }
+}
